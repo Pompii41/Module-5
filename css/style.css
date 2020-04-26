@@ -85,12 +85,47 @@ nav {
   margin-right: 30px;
 }
 
+.next {
+  background-color: rgb(26, 188, 156, 0.5);
+  float: right;
+  width: 104px;
+  height: 104px;
+  z-index: 15;
+  font-size: 100px;
+  background-image: url(../img/icon/angle-right.svg);
+  border: none;
+  transform: translateY(-50%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80%;
+  cursor: pointer;
+}
+
+.back {
+  background-color: rgb(26, 188, 156, 0.5);
+  background-image: url(../img/icon/angle-left.svg);
+  float: left;
+  width: 104px;
+  height: 104px;
+  z-index: 12;
+  font-size: 100px;
+  border: none;
+  transform: translateY(-50%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80%;
+  cursor: pointer;
+}
+
+.button-type:hover {
+  background-color: #1abc9c;
+}
+
 .image-box {
   height: 100%;
   width: 100%;
   position: absolute;
   background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45));
-
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -130,48 +165,12 @@ nav {
 
 .subtitle {
   color: #fff;
-  text-align: center;
   font-size: 24px;
   font-family: "Roboto", sans-serif;
   line-height: 1.367;
   font-weight: 300;
   z-index: 10;
-}
-
-.next {
-  background-color: rgb(26, 188, 156, 0.5);
-  float: right;
-  width: 104px;
-  height: 104px;
-  z-index: 5;
-  font-size: 100px;
-  background-image: url(../img/icon/angle-right.svg);
-  border: none;
-  transform: translateY(-50%);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 80%;
-  cursor: pointer;
-}
-
-.button-type:hover {
-  background-color: rgb(26, 188, 156);
-}
-
-.back {
-  background-color: rgb(26, 188, 156, 0.5);
-  background-image: url(../img/icon/angle-left.svg);
-  float: left;
-  width: 104px;
-  height: 104px;
-  z-index: 5;
-  font-size: 100px;
-  border: none;
-  transform: translateY(-50%);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 80%;
-  cursor: pointer;
+  padding-left: 170px;
 }
 
 .clearfix:after {
