@@ -26,19 +26,11 @@ h1 {
   padding-right: 245px;
   padding-bottom: 32px;
   color: #555252;
-
 }
 
 .logo {
   text-decoration: none;
-
-
 }
-
-
-
-
-
 
 .header-main {
   width: 1110px;
@@ -72,7 +64,14 @@ nav {
   display: table;
   clear: both;
 }
-
+.text-box {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  width: 100%;
+}
 .site-navigation a {
   text-decoration: none;
   font-size: 14px;
@@ -90,8 +89,8 @@ nav {
   height: 100%;
   width: 100%;
   position: absolute;
-  background-color: #0f0101;
-  opacity: 0.5;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45));
+
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -123,24 +122,20 @@ nav {
 .title-slider {
   color: #fff;
   font-size: 60px;
-  font-family: "Roboto",
-    sans-serif;
+  font-family: "Roboto", sans-serif;
   text-align: center;
-
+  margin-bottom: 10px;
+  z-index: 10;
 }
 
 .subtitle {
   color: #fff;
-  text-align: left;
-  left: 50%;
-  top: 56%;
-  transform: translate(-78%, -50%);
-  position: absolute;
+  text-align: center;
   font-size: 24px;
-  font-family: "Roboto",
-    sans-serif;
+  font-family: "Roboto", sans-serif;
   line-height: 1.367;
   font-weight: 300;
+  z-index: 10;
 }
 
 .next {
@@ -158,8 +153,6 @@ nav {
   background-size: 80%;
   cursor: pointer;
 }
-
-
 
 .button-type:hover {
   background-color: rgb(26, 188, 156);
@@ -228,11 +221,12 @@ nav {
   color: rgb(255, 255, 255);
   text-transform: uppercase;
   text-align: left;
+  margin-top: 10px;
 }
 
 .header-shop {
-  display: inline;
-  padding: 3px 12px 0 12px;
+  display: inline-block;
+  padding: 3px 12px 5px 12px;
 }
 
 .bottom-shop {
@@ -255,7 +249,7 @@ nav {
   color: rgb(255, 255, 255);
   line-height: 1.778;
   text-align: center;
-  padding: 0px 12px;
+  padding: 2px 12px;
   background-color: rgba(255, 255, 255, 0.4);
 }
 
@@ -316,11 +310,9 @@ nav {
   cursor: pointer;
 }
 
-
 .overlay-list-item-link-like {
   background-image: url(../img/icon/like.png);
   background-repeat: no-repeat;
-
 }
 
 .overlay-list-item-link-arrows {
@@ -338,13 +330,9 @@ nav {
   background-position: 10%;
   background-color: rgb(50, 50, 50);
   font-size: 14px;
-  font-family: "Open Sans",
-    sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: rgb(255, 255, 255);
-
 }
-
-
 
 .overlay-list-item {
   float: left;
@@ -360,13 +348,11 @@ nav {
 }
 
 .basket-text {
-
   margin: 0 auto;
 }
 
 .featured-list-item:hover .overlay {
   display: block;
-
 }
 
 .basket-text {
@@ -379,26 +365,20 @@ nav {
 }
 
 .footer-box {
-
   background-color: rgb(50, 50, 50);
   width: 100%;
   height: 88px;
-
-
 }
 
 .main-box {
   padding-bottom: 100px;
 
   background-color: rgb(233, 240, 253);
-
 }
 
 .contacts {
-
   font-size: 16px;
-  font-family: "Open Sans",
-    sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: rgb(254, 254, 254);
   line-height: 1.75;
   text-align: center;
@@ -406,14 +386,10 @@ nav {
 }
 
 .contacts-link {
-
   font-size: 16px;
-  font-family: "Open Sans",
-    sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: rgb(69, 182, 161);
-
 }
-
 
 .footer-box a:hover {
   text-shadow: 0 0 4px #46bfa9;
